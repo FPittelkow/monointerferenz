@@ -1,0 +1,70 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: monointerferenz
+description: > # this means to ignore newlines until "baseurl:"
+repository: FPittelkow/monointerferenz
+url: "https://fpittelkow.github.io"
+baseurl: "/monointerferenz"
+
+timezone: Europe/Brussels
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  style: compressed
+
+# Theme settings
+theme_mode: standard  # choices are: 'dark', 'standard', 'markdown'
+
+plugins:
+  - jekyll-seo-tag
+
+
+# Customizations
+your_name: monointerferenz
+email: post@monointerferenz.de
+grid_image_grayscale: false
+
+navigation:
+  - text: Home
+    url: /
+
+  - text: About
+    url: /about
+
+  - text: Search
+    url: /search
+    secondary: true
+
+  - spacer: true
+
+  - label: Projects
+
+  - categories: true
+
+  # - spacer: true
+
+  # - label: Explore
+  
+  # - text: Tags
+  #   url: /tags
+  #   secondary: true
+
+  - spacer: true
+
+  - label: Stuff
+
+  - text: Downloads
+    url: /downloads
+
+navigation_category_exclusions: [download]
+navigation_category_titles:
+  artifact: Artifacts

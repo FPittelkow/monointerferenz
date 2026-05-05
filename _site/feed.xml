@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>monointerferenz</title>
+    <description></description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 05 May 2026 22:21:52 +0200</pubDate>
+    <lastBuildDate>Tue, 05 May 2026 22:21:52 +0200</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Remembering Max</title>
+        <description>&lt;p&gt;The main goal of the interactive installation is to create an atmosphere consisting of a combination of audio and visuals which can be shaped by the viewer. The viewer stands in front of a pair of speakers and is either surrounded by lights (or views a projection on a screen).&lt;/p&gt;
+
+&lt;p&gt;The viewer has the opportunity to shape the atmosphere using a smartphone or tablet. It should be possible to cross-fade between different states of the installation.These atmospheres shall represent different environments. E.g. a city or a forest. The viewer could now mix the city with the forest and experience these combinations.&lt;/p&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;600&quot; src=&quot;https://www.youtube.com/embed/aPO69jznL0s&quot; title=&quot;ExAuVi&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Tue, 05 May 2026 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/computational/2026/05/05/remembering-max.html</link>
+        <guid isPermaLink="true">http://localhost:4000/computational/2026/05/05/remembering-max.html</guid>
+        
+        <category>interactive</category>
+        
+        <category>code</category>
+        
+        <category>generative</category>
+        
+        <category>sound</category>
+        
+        
+        <category>computational</category>
+        
+      </item>
+    
+      <item>
+        <title>Connected Ideas</title>
+        <description>&lt;p&gt;&lt;strong&gt;Drag left to decrease or right to increase the number of Ideas.&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe scrolling=&quot;no&quot; style=&quot;overflow:hidden&quot; width=&quot;100%&quot; height=&quot;800&quot; src=&quot;/assets/support/connected/connected.html&quot;&gt;
+&lt;/iframe&gt;
+
+&lt;h2 id=&quot;statement--description&quot;&gt;Statement &amp;amp; Description&lt;/h2&gt;
+&lt;p&gt;Each dot embodies a singular thought, traversing a defined yet fluid space where art meets algorithm. As these thoughts journey across the canvas, their paths are shaped by both chance and computational precision. When two thoughts come close, a bond form a luminous line whose brightness reflects their proximity, serving as a technical display of their conceptual connection.&lt;/p&gt;
+
+&lt;p&gt;Over time, these interactions gradually form a dynamic network, an evolving structure that mirrors the delicate balance between randomness and order. This project is a digital tapestry, where the interplay of light and motion reveals the intricate, measurable dance of ideas.&lt;/p&gt;
+
+&lt;h2 id=&quot;inspiration&quot;&gt;Inspiration&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Cloud_chamber&quot; target=&quot;_blank&quot;&gt;Cloud chamber&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Photo_51&quot; target=&quot;_blank&quot;&gt;Photo 51&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;technical-description&quot;&gt;Technical Description&lt;/h2&gt;
+&lt;p&gt;The visualization begins by setting up a drawing area and dynamically creating a collection of nodes based on an initial default value. The number of nodes can be adjusted on the fly using a horizontal drag gesture dragging right increases the node count while dragging left decreases it. Each node is randomly positioned within the canvas and is assigned a random speed and direction.&lt;/p&gt;
+
+&lt;p&gt;In every cycle, the program overlays a nearly transparent black layer across the entire drawing area. This fading effect causes previous frames to gradually disappear, creating motion trails behind the moving nodes.&lt;/p&gt;
+
+&lt;p&gt;Next, the program computes the distance between every pair of nodes. If two nodes are close enough, it draws a line connecting them, with the line’s brightness increasing as the distance between the nodes decreases. After rendering these connections, each node’s position is updated according to its velocity. If a node reaches the edge of the drawing area, it bounces back by reversing its direction.&lt;/p&gt;
+
+&lt;p&gt;Finally, the program continuously monitors horizontal drag gestures. When such a gesture is detected, nodes are either added or removed dynamically ensuring the visualization reflects the user’s current interaction in real time.&lt;/p&gt;
+
+&lt;h3 id=&quot;tools&quot;&gt;Tools&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://p5js.org&quot; target=&quot;_blank&quot;&gt;p5.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 05 May 2026 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/generative/2026/05/05/connected-ideas.html</link>
+        <guid isPermaLink="true">http://localhost:4000/generative/2026/05/05/connected-ideas.html</guid>
+        
+        <category>interactive</category>
+        
+        <category>code</category>
+        
+        <category>generative</category>
+        
+        <category>network</category>
+        
+        
+        <category>generative</category>
+        
+      </item>
+    
+  </channel>
+</rss>

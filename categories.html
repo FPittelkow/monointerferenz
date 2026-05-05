@@ -1,0 +1,49 @@
+---
+layout: default
+permalink: /categories
+title: Categories
+---
+
+<section>
+  {% assign sorted_categories = site.categories | sort %}
+  {% assign excluded_categories = site.navigation_category_exclusions | default: empty %}
+  {% for category in sorted_categories %}
+    {% assign category_name = category[0] %}
+    {% unless excluded_categories contains category_name %}
+      {% assign category_slug = category_name | slugify %}
+      {% assign category_title = site.navigation_category_titles[category_name] | default: category_name | capitalize %}
+      <section id="category-{{ category_slug }}" data-category-section>
+        <h1>{{ category_title }}</h1>
+        {% include post-list.html category=category_name %}
+      </section>
+    {% endunless %}
+  {% endfor %}
+</section>
+
+<script>
+  (function () {
+    var sections = Array.prototype.slice.call(document.querySelectorAll("[data-category-section]"));
+
+    function showCategory() {
+      if (!sections.length) {
+        return;
+      }
+
+      var activeId = window.location.hash ? window.location.hash.slice(1) : sections[0].id;
+      var hasMatch = sections.some(function (section) {
+        return section.id === activeId;
+      });
+
+      if (!hasMatch) {
+        activeId = sections[0].id;
+      }
+
+      sections.forEach(function (section) {
+        section.hidden = section.id !== activeId;
+      });
+    }
+
+    showCategory();
+    window.addEventListener("hashchange", showCategory);
+  }());
+</script>
