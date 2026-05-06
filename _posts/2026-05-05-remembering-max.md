@@ -2,7 +2,7 @@
 layout: post
 title: Remembering Max
 categories: computational
-date: 2026-05-05 Europe/Brussel
+# date: 2026-05-05 Europe/Brussel
 tags:
   - interactive
   - code

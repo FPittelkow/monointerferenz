@@ -2,7 +2,7 @@
 layout: post
 title: Connected Ideas
 categories: generative
-date: 2026-05-05 Europe/Brussel
+# date: 2026-05-05 Europe/Brussel
 tags:
   - interactive
   - code
