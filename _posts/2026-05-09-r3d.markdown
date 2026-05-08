@@ -1,9 +1,12 @@
 ---
 title: r3d
 layout: post
-featured: false
+featured: true
 categories: Visual
 tags:
+	- experimental
+	- glitch
+	- procedural
 short_description: r3d
 image_preview: assets/images/r3d_thumbnail.jpg
 ---
