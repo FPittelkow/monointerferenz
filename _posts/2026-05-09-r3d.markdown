@@ -5,7 +5,7 @@ featured: false
 categories: Visual
 tags:
 short_description: r3d
-image_preview: assets/images/r3.png
+image_preview: assets/images/r3d_thumbnail.jpg
 ---
 <!-- assets/images/r3d/remember-max.png -->
 {% include image-gallery.html folder="assets/images/r3d" %}
