@@ -1,0 +1,11 @@
+---
+title: R3D
+layout: post
+featured: false
+categories: Visual
+tags:
+short_description: Test
+image_preview:
+---
+<!-- assets/images/r3d/remember-max.png -->
+{% include image-gallery.html folder="assets/images/r3d" %}

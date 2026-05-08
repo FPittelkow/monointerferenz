@@ -5,9 +5,31 @@
     <description></description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 May 2026 02:35:06 +0200</pubDate>
-    <lastBuildDate>Wed, 06 May 2026 02:35:06 +0200</lastBuildDate>
+    <pubDate>Sat, 09 May 2026 00:55:19 +0200</pubDate>
+    <lastBuildDate>Sat, 09 May 2026 00:55:19 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>R3D</title>
+        <description>&lt;!-- assets/images/r3d/remember-max.png --&gt;
+&lt;style&gt;
+    .image-gallery {overflow: auto; margin-left: -1%!important;}
+    .image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 19%;}
+    .image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
+    .image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
+    .image-gallery li a img {width: 100%; display: block;}
+&lt;/style&gt;
+
+&lt;ul class=&quot;image-gallery&quot;&gt;&lt;li&gt;&lt;a href=&quot;/assets/images/r3d/00000-1164221238.jpg&quot; title=&quot;00000-1164221238&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=localhost:4000/assets/images/r3d/00000-1164221238.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;00000-1164221238&quot; title=&quot;00000-1164221238&quot; /&gt;&lt;span&gt;00000-1164221238&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/assets/images/r3d/00002-1164221240.jpg&quot; title=&quot;00002-1164221240&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=localhost:4000/assets/images/r3d/00002-1164221240.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;00002-1164221240&quot; title=&quot;00002-1164221240&quot; /&gt;&lt;span&gt;00002-1164221240&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/assets/images/r3d/00003-1164221241.jpg&quot; title=&quot;00003-1164221241&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=localhost:4000/assets/images/r3d/00003-1164221241.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;00003-1164221241&quot; title=&quot;00003-1164221241&quot; /&gt;&lt;span&gt;00003-1164221241&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/assets/images/r3d/00004-4116726404.jpg&quot; title=&quot;00004-4116726404&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=localhost:4000/assets/images/r3d/00004-4116726404.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;00004-4116726404&quot; title=&quot;00004-4116726404&quot; /&gt;&lt;span&gt;00004-4116726404&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/assets/images/r3d/00005-1930864827.jpg&quot; title=&quot;00005-1930864827&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=localhost:4000/assets/images/r3d/00005-1930864827.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;00005-1930864827&quot; title=&quot;00005-1930864827&quot; /&gt;&lt;span&gt;00005-1930864827&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/assets/images/r3d/00007-1049361586.jpg&quot; title=&quot;00007-1049361586&quot;&gt;&lt;img src=&quot;//images.weserv.nl/?url=localhost:4000/assets/images/r3d/00007-1049361586.jpg&amp;amp;w=300&amp;amp;h=300&amp;amp;output=jpg&amp;amp;q=50&amp;amp;t=square&quot; alt=&quot;00007-1049361586&quot; title=&quot;00007-1049361586&quot; /&gt;&lt;span&gt;00007-1049361586&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 09 May 2026 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/visual/2026/05/09/r3d.html</link>
+        <guid isPermaLink="true">http://localhost:4000/visual/2026/05/09/r3d.html</guid>
+        
+        
+        <category>Visual</category>
+        
+      </item>
     
       <item>
         <title>Remembering Max</title>
