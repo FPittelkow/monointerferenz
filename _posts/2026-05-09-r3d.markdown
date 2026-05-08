@@ -11,4 +11,4 @@ short_description: r3d
 image_preview: assets/images/r3d_thumbnail.jpg
 ---
 <!-- assets/images/r3d/remember-max.png -->
-{% include image-gallery.html folder="assets/images/r3d" %}
+{% include image-gallery.html folder="assets/images/r3d/" %}
