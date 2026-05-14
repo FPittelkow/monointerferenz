@@ -5,9 +5,45 @@
     <description></description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 May 2026 18:57:38 +0200</pubDate>
-    <lastBuildDate>Thu, 14 May 2026 18:57:38 +0200</lastBuildDate>
+    <pubDate>Thu, 14 May 2026 20:35:13 +0200</pubDate>
+    <lastBuildDate>Thu, 14 May 2026 20:35:13 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Cellular Patterns</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/cellular_patterns/cellular_patterns.jpg&quot; alt=&quot;Cellular Patterns&quot; /&gt;
+Cells and organisms form patterns in various ways. There can be repeating structures, but also internal processes that follow specific rhythms. Such as the transportation of nutrients or the movement of chloroplasts.
+The goal of this project is to present a way to explore these structures.&lt;/p&gt;
+
+&lt;p&gt;Therefore, the live picture of the cell is broken down to a simple pattern. This pattern gets matched against a set of predefined rules.
+If the pattern generated contains one or more of these, a specific sound for gets triggered and shaped.&lt;/p&gt;
+
+&lt;p&gt;The sample under the microscope can be moved to view different parts and therefore generate new patterns. Not every pattern contains one of the preset rules. In that case, no sound gets triggered, and a new pattern has to be found.&lt;/p&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;600&quot; src=&quot;https://www.youtube.com/embed/Nb5CVFCqHjo&quot; title=&quot;cp demo n&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Thu, 14 May 2026 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/audiovisual/2026/05/14/cellular-patterns.html</link>
+        <guid isPermaLink="true">http://localhost:4000/audiovisual/2026/05/14/cellular-patterns.html</guid>
+        
+        <category>Sound</category>
+        
+        <category>Systems</category>
+        
+        <category>Organisms</category>
+        
+        <category>Generative</category>
+        
+        <category>Installation</category>
+        
+        <category>Interactive</category>
+        
+        <category>Biology</category>
+        
+        
+        <category>Audiovisual</category>
+        
+      </item>
     
       <item>
         <title>r3d</title>
