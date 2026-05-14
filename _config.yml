@@ -65,6 +65,9 @@ navigation:
   - text: Downloads
     url: /downloads
 
+  - text: Contact
+    url: mailto:post@monointerferenz.de
+
 navigation_category_exclusions: [download]
 navigation_category_titles:
   artifact: Artifacts
