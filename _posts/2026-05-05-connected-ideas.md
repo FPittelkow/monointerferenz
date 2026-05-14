@@ -10,7 +10,7 @@ tags:
   - network
 short_description: Interactive generative sketch where ideas drift, connect, and dissolve into a moving network.
 featured: true
-image_preview: /assets/images/connected-ideas.png
+image_preview: /assets/images/thumbnails/connected-ideas.png
 ---
 **Drag left to decrease or right to increase the number of Ideas.**
 <iframe
