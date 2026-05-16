@@ -42,7 +42,6 @@ jobs:
           path: ./_site
           retention-days: 7
 
-
   deploy:
     environment:
       name: github-pages
