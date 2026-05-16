@@ -6,7 +6,9 @@
 ._*
 
 # Custom folder icons
-Icon
+Icon
+
+.jekyllstudio/
 
 # Volume root files
 .DocumentRevisions-V100

@@ -1,18 +1,10 @@
 ---
-title: Cellular Patterns
 layout: post
 featured: true
 categories: Audiovisual
-tags: 
-  - Sound
-  - Systems
-  - Organisms
-  - Generative
-  - Installation
-  - Interactive
-  - Biology
 short_description: Microscopic patterns and biological processes are translated into generative sound in real time.
 image_preview: assets/images/thumbnails/cellular_patterns_thumbnail.png
+title: Cellular Patterns
 ---
 
 ![Cellular Patterns](/assets/images/cellular_patterns/cellular_patterns.jpg)
