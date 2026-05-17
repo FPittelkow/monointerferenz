@@ -37,8 +37,8 @@ navigation:
   - text: Home
     url: /
 
-  # - text: About
-  #   url: /about
+  - text: About
+    url: /about
 
   - text: Search
     url: /search
