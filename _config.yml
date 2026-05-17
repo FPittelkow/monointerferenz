@@ -40,6 +40,8 @@ navigation:
   - text: About
     url: /about
 
+  - spacer: true
+
   - text: Search
     url: /search
     secondary: true
