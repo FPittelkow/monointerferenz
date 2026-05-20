@@ -68,7 +68,7 @@ navigation:
     url: /downloads
 
   - text: Contact
-    url: mailto:post@monointerferenz.de
+    url: mailto:operator@monointerferenz.de
 
 navigation_category_exclusions: [download]
 navigation_category_titles:
