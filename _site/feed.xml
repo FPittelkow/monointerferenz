@@ -5,9 +5,323 @@
     <description></description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 18 May 2026 23:23:40 +0200</pubDate>
-    <lastBuildDate>Mon, 18 May 2026 23:23:40 +0200</lastBuildDate>
+    <pubDate>Thu, 04 Jun 2026 04:34:34 +0200</pubDate>
+    <lastBuildDate>Thu, 04 Jun 2026 04:34:34 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Emergence Machine</title>
+        <description>&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;Emergence Machine is a Raspberry Pi–based environmental observation and interpretation system.&lt;/p&gt;
+
+&lt;p&gt;The system continuously observes its surroundings through cameras, microphones, and physical sensors. Rather than directly generating sound or visuals, it extracts features from these inputs, derives higher-level system states, and transmits those states via OSC to external systems such as Max/MSP.&lt;/p&gt;
+
+&lt;p&gt;The project is inspired by concepts of emergence, cybernetics, systems theory, and environmental computation. The goal is not measurement but the generation of behaviors that arise through the interaction of multiple independent subsystems.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;core-architecture&quot;&gt;Core Architecture&lt;/h2&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Sensors
+(Camera, Audio, GPIO, I²C)
+          │
+          ▼
+     Raw State
+          │
+          ▼
+   Emergence Engine
+          │
+          ▼
+   Derived State
+          │
+    ┌─────┴─────┐
+    ▼           ▼
+  OSC       Web UI
+    │
+    ▼
+ Max/MSP
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;system-responsibilities&quot;&gt;System Responsibilities&lt;/h2&gt;
+
+&lt;h3 id=&quot;raspberry-pi&quot;&gt;Raspberry Pi&lt;/h3&gt;
+
+&lt;p&gt;The Raspberry Pi acts as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;observer&lt;/li&gt;
+  &lt;li&gt;feature extractor&lt;/li&gt;
+  &lt;li&gt;state machine&lt;/li&gt;
+  &lt;li&gt;OSC transmitter&lt;/li&gt;
+  &lt;li&gt;local web server&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The Pi does not perform heavy audio synthesis or visual rendering.&lt;/p&gt;
+
+&lt;h3 id=&quot;maxmsp&quot;&gt;Max/MSP&lt;/h3&gt;
+
+&lt;p&gt;Max/MSP acts as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;sound engine&lt;/li&gt;
+  &lt;li&gt;visual engine&lt;/li&gt;
+  &lt;li&gt;recording system&lt;/li&gt;
+  &lt;li&gt;performance environment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It receives interpreted state variables rather than raw sensor streams.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;technology-stack&quot;&gt;Technology Stack&lt;/h2&gt;
+
+&lt;h3 id=&quot;platform&quot;&gt;Platform&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Raspberry Pi 4&lt;/li&gt;
+  &lt;li&gt;Debian 13 (Trixie)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;python&quot;&gt;Python&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Python 3&lt;/li&gt;
+  &lt;li&gt;uv&lt;/li&gt;
+  &lt;li&gt;asyncio&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;input&quot;&gt;Input&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;OpenCV / Picamera2&lt;/li&gt;
+  &lt;li&gt;sounddevice&lt;/li&gt;
+  &lt;li&gt;gpiozero&lt;/li&gt;
+  &lt;li&gt;smbus2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;communication&quot;&gt;Communication&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;python-osc&lt;/li&gt;
+  &lt;li&gt;FastAPI&lt;/li&gt;
+  &lt;li&gt;WebSockets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;output&quot;&gt;Output&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;OSC&lt;/li&gt;
+  &lt;li&gt;Browser Dashboard&lt;/li&gt;
+  &lt;li&gt;Max/MSP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;repository-structure&quot;&gt;Repository Structure&lt;/h2&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;emergence-machine/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── camera.py
+│   ├── audio.py
+│   ├── sensors.py
+│   ├── osc.py
+│   ├── state.py
+│   └── engine.py
+│
+├── static/
+│   ├── index.html
+│   ├── sketch.js
+│   └── style.css
+│
+├── data/
+├── logs/
+│
+├── pyproject.toml
+├── uv.lock
+└── README.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;state-architecture&quot;&gt;State Architecture&lt;/h2&gt;
+
+&lt;p&gt;All modules communicate exclusively through a shared state object.&lt;/p&gt;
+
+&lt;p&gt;Modules should never directly call each other.&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;camera.py
+audio.py
+sensors.py
+      │
+      ▼
+   state.py
+      │
+      ▼
+   engine.py
+      │
+      ▼
+    osc.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This keeps the system modular and allows sensors, engines, and outputs to be replaced independently.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;raw-state&quot;&gt;Raw State&lt;/h2&gt;
+
+&lt;p&gt;Raw state contains direct measurements.&lt;/p&gt;
+
+&lt;p&gt;Examples:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;motion&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;brightness&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;audio_energy&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;audio_centroid&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;temperature&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;humidity&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;light_level&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Raw state should remain close to the physical world.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;engine-state&quot;&gt;Engine State&lt;/h2&gt;
+
+&lt;p&gt;Engine state contains interpreted variables.&lt;/p&gt;
+
+&lt;p&gt;Examples:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;complexity&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;coherence&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;tension&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;growth&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;entropy&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;stability&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;These are the primary outputs of the system.&lt;/p&gt;
+
+&lt;p&gt;Max/MSP should primarily consume these values.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;osc-design&quot;&gt;OSC Design&lt;/h2&gt;
+
+&lt;p&gt;Examples:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/emergence/raw/motion
+/emergence/raw/brightness
+/emergence/raw/audio_energy
+
+/emergence/engine/complexity
+/emergence/engine/coherence
+/emergence/engine/tension
+/emergence/engine/entropy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;OSC update frequency:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;20 Hz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;is sufficient for most uses.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;development-roadmap&quot;&gt;Development Roadmap&lt;/h2&gt;
+
+&lt;h3 id=&quot;phase-1&quot;&gt;Phase 1&lt;/h3&gt;
+
+&lt;p&gt;Communication Backbone&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;OSC transmission&lt;/li&gt;
+  &lt;li&gt;Shared state&lt;/li&gt;
+  &lt;li&gt;Simulated sensor data&lt;/li&gt;
+  &lt;li&gt;Max/MSP connectivity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Status:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;OSC working&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;phase-2&quot;&gt;Phase 2&lt;/h3&gt;
+
+&lt;p&gt;Real Sensors&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Camera&lt;/li&gt;
+  &lt;li&gt;Microphone&lt;/li&gt;
+  &lt;li&gt;GPIO sensors&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;phase-3&quot;&gt;Phase 3&lt;/h3&gt;
+
+&lt;p&gt;Emergence Engine&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;State derivation&lt;/li&gt;
+  &lt;li&gt;Temporal memory&lt;/li&gt;
+  &lt;li&gt;Feedback loops&lt;/li&gt;
+  &lt;li&gt;Environmental interpretation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;phase-4&quot;&gt;Phase 4&lt;/h3&gt;
+
+&lt;p&gt;Dashboard&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;FastAPI&lt;/li&gt;
+  &lt;li&gt;WebSocket streaming&lt;/li&gt;
+  &lt;li&gt;Live visualization&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;phase-5&quot;&gt;Phase 5&lt;/h3&gt;
+
+&lt;p&gt;Installation Mode&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Autostart via systemd&lt;/li&gt;
+  &lt;li&gt;Headless operation&lt;/li&gt;
+  &lt;li&gt;Long-term logging&lt;/li&gt;
+  &lt;li&gt;Exhibition deployment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;design-principles&quot;&gt;Design Principles&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Sensors observe.&lt;/li&gt;
+  &lt;li&gt;The engine interprets.&lt;/li&gt;
+  &lt;li&gt;OSC communicates.&lt;/li&gt;
+  &lt;li&gt;Max/MSP performs.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Keep sensing, interpretation, and rendering separate.&lt;/p&gt;
+
+&lt;p&gt;The system should not map sensor values directly to outputs. Instead, behaviors should emerge from interactions between multiple variables and temporal processes.&lt;/p&gt;
+
+&lt;p&gt;The machine is not a measurement device but an environmental observer whose internal states evolve over time.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/FPittelkow/Emergence-Machine&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Jun 2026 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/computational/2026/06/04/emergence-machine.html</link>
+        <guid isPermaLink="true">http://localhost:4000/computational/2026/06/04/emergence-machine.html</guid>
+        
+        
+        <category>Computational</category>
+        
+      </item>
     
       <item>
         <title>Cellular Patterns</title>
