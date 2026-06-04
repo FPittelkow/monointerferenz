@@ -285,4 +285,4 @@ Keep sensing, interpretation, and rendering separate.
 
 The system should not map sensor values directly to outputs. Instead, behaviors should emerge from interactions between multiple variables and temporal processes.
 
-The machine is not a measurement device but an environmental observer whose internal states evolve over time.s
+The machine is not a measurement device but an environmental observer whose internal states evolve over time.
