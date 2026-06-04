@@ -287,4 +287,4 @@ The system should not map sensor values directly to outputs. Instead, behaviors 
 
 The machine is not a measurement device but an environmental observer whose internal states evolve over time.
 
-![GitHub](https://github.com/FPittelkow/Emergence-Machine)
+[GitHub](https://github.com/FPittelkow/Emergence-Machine)
