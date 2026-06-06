@@ -16,7 +16,7 @@ A cellular automaton is a mathematical model used to simulate complex systems. T
 
 Combining sound and visuals creates an environment to understand such systems in various ways.
 
-Often Cellular Automata are used to show the principles of the evolution of a population over generations. Translating this longlasting process into a different media, allows a new way of understanding populations as a system of generations and the dependence of them.
+Often cellular automata are used to show the principles of the evolution of a population over generations. Translating this long-lasting process into a different media allows a new way of understanding populations as a system of generations and the dependence of them.
 
 ## System Architecture
 [![System Architecture](/assets/images/CellularAutomaton/CellularAutomaton.pdf.png)](/assets/images/CellularAutomaton/CellularAutomaton.pdf)
