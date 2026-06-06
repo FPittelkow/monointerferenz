@@ -350,6 +350,15 @@ $on-palm: 768px;
     margin-top: 0.35rem;
   }
 
+  &-archive-record {
+    margin-top: -0.25rem;
+    margin-bottom: 0.75rem;
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    opacity: 0.72;
+  }
+
   &-post-tag {
     display: inline-block;
     margin-right: 0.35rem;

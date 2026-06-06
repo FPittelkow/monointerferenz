@@ -1,6 +1,18 @@
 [
   
     {
+      "title": "Cellular Automaton | Sonification and visualisation",
+      "date": "06 Jun 2026",
+      
+        "url": "/audiovisual/2026/06/06/cellular-automaton-son-vis.html",
+      
+      "description": "Sonification and visualisation of a Cellular Automaton | MI-2026-CAS",
+      "categories": ["Audiovisual"],
+      "tags": ["code","sound"],
+      "content": "ConceptA cellular automaton is a mathematical model used to simulate complex systems. Think of it as a digital grid where each square (called a cell) acts as a basic unit of computation.Combining sound and visuals creates an environment to understand such systems in various ways.Often Cellular Automata are used to show the principles of the evolution of a population over generations. Translating this longlasting process into a different media, allows a new way of understanding populations as a system of generations and the dependence of them.System Architecture"
+    },
+  
+    {
       "title": "Emergence Machine",
       "date": "04 Jun 2026",
       
