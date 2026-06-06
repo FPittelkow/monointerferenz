@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Jun 2026 19:56:10 +0200</pubDate>
-    <lastBuildDate>Sat, 06 Jun 2026 19:56:10 +0200</lastBuildDate>
+    <pubDate>Sat, 06 Jun 2026 20:03:30 +0200</pubDate>
+    <lastBuildDate>Sat, 06 Jun 2026 20:03:30 +0200</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -19,7 +19,7 @@
 &lt;p&gt;Often Cellular Automata are used to show the principles of the evolution of a population over generations. Translating this longlasting process into a different media, allows a new way of understanding populations as a system of generations and the dependence of them.&lt;/p&gt;
 
 &lt;h2 id=&quot;system-architecture&quot;&gt;System Architecture&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;assets/images/CellularAutomaton/CellularAutomaton.pdf&quot; alt=&quot;System Architecture&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/images/CellularAutomaton/CellularAutomaton.pdf&quot;&gt;&lt;img src=&quot;/assets/images/CellularAutomaton/CellularAutomaton.pdf.png&quot; alt=&quot;System Architecture&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wq72kLr-WJM?si=EYX5me0f6f8gF5kV&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
