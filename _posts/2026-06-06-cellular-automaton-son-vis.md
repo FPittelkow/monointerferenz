@@ -8,7 +8,7 @@ tags:
   - sound
 short_description: Sonification and visualisation of a Cellular Automaton | MI-2026-CAS
 archive_record: MI-2026-CAS
-featured: false
+featured: true
 image_preview: assets/images/thumbnails/cellular-automaton-sonvis_thumbnail.png
 ---
 ## Concept
