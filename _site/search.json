@@ -9,7 +9,7 @@
       "description": "Sonification and visualisation of a Cellular Automaton | MI-2026-CAS",
       "categories": ["Audiovisual"],
       "tags": ["code","sound"],
-      "content": "ConceptA cellular automaton is a mathematical model used to simulate complex systems. Think of it as a digital grid where each square (called a cell) acts as a basic unit of computation.Combining sound and visuals creates an environment to understand such systems in various ways.Often Cellular Automata are used to show the principles of the evolution of a population over generations. Translating this longlasting process into a different media, allows a new way of understanding populations as a system of generations and the dependence of them.System Architecture"
+      "content": "ConceptA cellular automaton is a mathematical model used to simulate complex systems. Think of it as a digital grid where each square (called a cell) acts as a basic unit of computation.Combining sound and visuals creates an environment to understand such systems in various ways.Often cellular automata are used to show the principles of the evolution of a population over generations. Translating this long-lasting process into a different media allows a new way of understanding populations as a system of generations and the dependence of them.System Architecture"
     },
   
     {
