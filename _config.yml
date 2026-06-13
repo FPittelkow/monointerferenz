@@ -46,6 +46,9 @@ navigation:
     url: /search
     secondary: true
 
+  - text: Tags
+    url: /tags
+
   - spacer: true
 
   - label: Projects

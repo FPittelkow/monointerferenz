@@ -8,6 +8,7 @@ tags: sound visual generative code
 featured: true
 image_preview: assets/images/thumbnails/cellular-automaton-sonvis_thumbnail.png
 title: Cellular Automaton | Sonification and visualisation
+permalink: /cellular-automata
 ---
 
 ## Concept

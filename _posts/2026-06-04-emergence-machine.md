@@ -7,6 +7,7 @@ tags: code electronic environment
 short_description: Ia Raspberry Pi–based environmental observation and interpretation system.
 featured: false
 # image_preview: /assets/images/thumbnails/connected-ideas.png
+permalink: /emergence-machine
 ---
 ## Overview
 

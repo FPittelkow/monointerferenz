@@ -4,7 +4,7 @@
       "title": "Cellular Automaton | Sonification and visualisation",
       "date": "06 Jun 2026",
       
-        "url": "/audiovisual/2026/06/06/cellular-automaton-sonification-and-visualisation.html",
+        "url": "/cellular-automata",
       
       "description": "Sonification and visualisation of a Cellular Automaton | MI-2026-CAS",
       "categories": ["Audiovisual"],
@@ -16,7 +16,7 @@
       "title": "Emergence Machine",
       "date": "04 Jun 2026",
       
-        "url": "/computational/2026/06/04/emergence-machine.html",
+        "url": "/emergence-machine",
       
       "description": "Ia Raspberry Pi–based environmental observation and interpretation system.",
       "categories": ["Computational"],
@@ -28,7 +28,7 @@
       "title": "Cellular Patterns",
       "date": "14 May 2026",
       
-        "url": "/audiovisual/2026/05/14/cellular-patterns.html",
+        "url": "/cellular-patterns",
       
       "description": "Microscopic patterns and biological processes are translated into generative sound in real time.",
       "categories": ["Audiovisual"],
@@ -40,7 +40,7 @@
       "title": "r3d",
       "date": "09 May 2026",
       
-        "url": "/visual/2026/05/09/r3d.html",
+        "url": "/r3d",
       
       "description": "r3d",
       "categories": ["Visual"],
@@ -52,7 +52,7 @@
       "title": "Remembering Max",
       "date": "05 May 2026",
       
-        "url": "/computational/audiovisual/2026/05/05/remembering-max.html",
+        "url": "/remembering-max",
       
       "description": "Atmosspheric sound mixing.",
       "categories": ["Computational","Audiovisual"],
@@ -64,7 +64,7 @@
       "title": "Connected Ideas",
       "date": "05 May 2026",
       
-        "url": "/generative/computational/2026/05/05/connected-ideas.html",
+        "url": "/connected-ideas",
       
       "description": "Interactive generative sketch where ideas drift, connect, and dissolve into a moving network.",
       "categories": ["Generative","Computational"],

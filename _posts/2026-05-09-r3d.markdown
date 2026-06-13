@@ -9,6 +9,7 @@ tags:
   - procedural
 short_description: r3d
 image_preview: assets/images/thumbnails/r3d_thumbnail.jpg
+permalink: /r3d
 ---
 <!-- assets/images/r3d/remember-max.png -->
 {% include image-gallery.html folder="assets/images/r3d/" %}

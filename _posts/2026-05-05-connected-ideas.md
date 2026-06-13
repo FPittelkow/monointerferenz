@@ -7,6 +7,7 @@ featured: true
 tags: code experimantal
 image_preview: /assets/images/thumbnails/connected-ideas.png
 title: Connected Ideas
+permalink: /connected-ideas
 ---
 
 **Drag left to decrease or right to increase the number of Ideas.**

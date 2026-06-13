@@ -7,6 +7,7 @@ featured: false
 image_preview: assets/images/thumbnails/remember-max.png
 tags: sound
 title: Remembering Max
+permalink: /remembering-max
 ---
 
 The main goal of the interactive installation is to create an atmosphere consisting of a combination of audio and visuals which can be shaped by the viewer. The viewer stands in front of a pair of speakers and is either surrounded by lights (or views a projection on a screen).
