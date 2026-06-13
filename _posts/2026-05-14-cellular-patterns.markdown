@@ -2,6 +2,7 @@
 layout: post
 featured: true
 categories: Audiovisual
+tags: sound environment biological
 short_description: Microscopic patterns and biological processes are translated into generative sound in real time.
 image_preview: assets/images/thumbnails/cellular_patterns_thumbnail.png
 title: Cellular Patterns

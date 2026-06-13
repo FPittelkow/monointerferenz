@@ -1,17 +1,14 @@
 ---
 layout: post
-title: Connected Ideas
-categories: generative
+categories: Generative Computational
 # date: 2026-05-05 Europe/Brussel
-tags:
-  - interactive
-  - code
-  - generative
-  - network
 short_description: Interactive generative sketch where ideas drift, connect, and dissolve into a moving network.
 featured: true
+tags: code experimantal
 image_preview: /assets/images/thumbnails/connected-ideas.png
+title: Connected Ideas
 ---
+
 **Drag left to decrease or right to increase the number of Ideas.**
 <iframe
   scrolling="no"

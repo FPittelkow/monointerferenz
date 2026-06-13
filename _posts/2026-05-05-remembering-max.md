@@ -1,17 +1,14 @@
 ---
 layout: post
-title: Remembering Max
-categories: computational
+categories: Computational Audiovisual
 # date: 2026-05-05 Europe/Brussel
-tags:
-  - interactive
-  - code
-  - generative
-  - sound
 short_description: Atmosspheric sound mixing.
 featured: false
 image_preview: assets/images/thumbnails/remember-max.png
+tags: sound
+title: Remembering Max
 ---
+
 The main goal of the interactive installation is to create an atmosphere consisting of a combination of audio and visuals which can be shaped by the viewer. The viewer stands in front of a pair of speakers and is either surrounded by lights (or views a projection on a screen).
 
 

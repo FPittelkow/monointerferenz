@@ -2,6 +2,7 @@
 layout: post
 title: Emergence Machine
 categories: Computational
+tags: code electronic environment
 # date: 2026-05-05 Europe/Brussel
 short_description: Ia Raspberry Pi–based environmental observation and interpretation system.
 featured: false

@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Cellular Automaton | Sonification and visualisation
 categories: Audiovisual
 # date: 2026-05-05 Europe/Brussel
-tags:
-  - code
-  - sound
 short_description: Sonification and visualisation of a Cellular Automaton | MI-2026-CAS
 archive_record: MI-2026-CAS
+tags: sound visual generative code
 featured: true
 image_preview: assets/images/thumbnails/cellular-automaton-sonvis_thumbnail.png
+title: Cellular Automaton | Sonification and visualisation
 ---
+
 ## Concept
 A cellular automaton is a mathematical model used to simulate complex systems. Think of it as a digital grid where each square (called a cell) acts as a basic unit of computation.
 
