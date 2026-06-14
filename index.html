@@ -14,7 +14,7 @@ layout: default
   <div class="home-text">
     <h1>Systems tuned until they reveal themselves.</h1>
     <p class="home-description"">
-      Through the construction of computational, sonic and physical systems,
+      Through the [de][construction] of computational, sonic and physical systems,
       monointerferenz investigates how structures arise from interaction.
     </p>
     <dl class="home-methods" aria-label="Practice focus">
@@ -189,44 +189,8 @@ layout: default
   }
 </style>
 
-
-
 <section class="home-selected-works" id="selected-works">
   <!-- <h1> // </h1> -->
-  <h2>Selected works</h2>
+  <h2>Selected Artifacts</h2>
   {% include post-list.html featured=true layout="grid" %}
-
-  <!-- <h2>Explore</h2>
-  <div class="t-hackcss-tag-graph" data-tag-graph>
-    <svg class="t-hackcss-tag-graph-svg" role="img" aria-labelledby="tag-graph-title"></svg>
-  </div>
-
-  <aside class="t-hackcss-tag-insight" data-tag-insight></aside>
-  <script>
-  window.tagGraphData = {
-    "posts": [
-      {% for post in site.posts %}
-        {
-          "title": {{ post.title | jsonify }},
-          {% if post.external_url %}
-            "url": {{ post.external_url | jsonify }},
-          {% else %}
-            "url": {{ post.url | prepend: site.baseurl | jsonify }},
-          {% endif %}
-          "tags": {{ post.tags | jsonify }}
-        }{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ],
-    "tags": [
-      {% assign sorted_tags = site.tags | sort %}
-      {% for tag in sorted_tags %}
-        {
-          "name": {{ tag[0] | jsonify }},
-          "count": {{ tag[1].size | jsonify }}
-        }{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ]
-  };
-</script>
-<script src="{{ "/js/tag-graph.js" | prepend: site.baseurl }}"></script> -->
 </section>

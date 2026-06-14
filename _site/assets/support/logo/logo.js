@@ -289,16 +289,6 @@ function colorFromTone(tone, palette) {
   ];
 }
 
-// function keyPressed() {
-//   if (key === " ") stillMode = !stillMode;
-//   if (key === "c" || key === "C") paletteIndex = (paletteIndex + 1) % palettes.length;
-//   if (key === "s" || key === "S") saveCanvas("monointerferenz-frame", "png");
-// }
-
-// function mousePressed() {
-//   paletteIndex = (paletteIndex + 1) % palettes.length;
-// }
-
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
