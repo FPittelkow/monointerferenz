@@ -29,9 +29,9 @@
 
   <!-- Custom style -->
   
-  <link rel="stylesheet" href="/css/hack.css?v=1781334988"/>
-  <link rel="stylesheet" href="/css/style_standard.css?v=1781334988"/>
-  <link rel="stylesheet" href="/css/main.css?v=1781334988" />
+  <link rel="stylesheet" href="/css/hack.css?v=1781395297"/>
+  <link rel="stylesheet" href="/css/style_standard.css?v=1781395297"/>
+  <link rel="stylesheet" href="/css/main.css?v=1781395297" />
 
   <!-- Feed -->
   <link rel="alternate" type="application/rss+xml" title="monointerferenz"
@@ -191,9 +191,198 @@
         </aside>
 
         <main class="cell -9of12">
-          <section>
+          <section class="home-hero">
+  <div class="home-logo" aria-label="monointerferenz generative logo animation">
+    <iframe
+      title="monointerferenz logo animation"
+      scrolling="no"
+      src="/assets/support/logo/logo.html">
+    </iframe>
+  </div>
+
+  <div class="home-text">
+    <h1>Systems tuned until they reveal themselves.</h1>
+    <p class="home-description"">
+      Through the construction of computational, sonic and physical systems,
+      monointerferenz investigates how structures arise from interaction.
+    </p>
+    <dl class="home-methods" aria-label="Practice focus">
+      <div>
+        <dt>Signal</dt>
+        <dd>input as material</dd>
+      </div>
+      <div>
+        <dt>Method</dt>
+        <dd>systems in motion</dd>
+      </div>
+      <div>
+        <dt>Emergence</dt>
+        <dd>forms from interaction</dd>
+      </div>
+    </dl>
+    <a class="home-selected-link" href="#selected-works">Selected Artifacts →</a>
+  </div>
+</section>
+
+<style>
+  body > .container {
+    max-width: 88rem;
+  }
+
+  .home-hero {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    padding: clamp(1.5rem, 4vh, 3rem) 0 clamp(2rem, 4vw, 3rem);
+  }
+
+  .home-logo {
+    position: absolute;
+    z-index: 1;
+    top: clamp(4.5rem, 11vh, 7rem);
+    left: clamp(9rem, 21vw, 17rem);
+    width: min(78%, 50rem);
+    aspect-ratio: 486.37 / 452.93;
+  }
+
+  .home-logo iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 0;
+  }
+
+  .home-text {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: clamp(0.85rem, 1.5vw, 1.15rem);
+    width: min(100%, 58rem);
+    margin-left: clamp(0rem, 6vw, 5rem);
+    padding-top: clamp(0.5rem, 3vh, 2rem);
+  }
+
+  .home-text h1 {
+    max-width: 13ch;
+    margin: 0;
+    font-size: clamp(2.8rem, 4.5vw, 4.6rem);
+    font-weight: 700;
+    line-height: 0.96;
+    letter-spacing: 0;
+  }
+
+  .home-text .home-description {
+    max-width: 46rem;
+    margin: 34rem 0 0 4rem;
+    font-size: clamp(1.08rem, 1.6vw, 1.32rem);
+    line-height: 1.5;
+    opacity: 0.76;
+  }
+
+  .home-methods {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    width: min(100%, 58rem);
+    margin: clamp(0.15rem, 0.8vw, 0.45rem) 0 0;
+    padding: 0;
+    border-top: 1px solid rgba(37, 42, 46, 0.34);
+    border-bottom: 1px solid rgba(37, 42, 46, 0.18);
+  }
+
+  .home-methods div {
+    min-width: 0;
+    padding: 0.58rem 0.9rem 0.65rem 0;
+  }
+
+  .home-methods div + div {
+    padding-left: 0.8rem;
+    border-left: 1px solid rgba(37, 42, 46, 0.18);
+  }
+
+  .home-methods dt {
+    margin: 0 0 0.15rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .home-methods dd {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.25;
+    opacity: 0.64;
+  }
+
+  .home-selected-link {
+    display: block;
+    justify-self: stretch;
+    margin-top: 0;
+    padding: 0.55rem 0 0;
+    border-top: 1px solid rgba(37, 42, 46, 0.18);
+    color: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration: none;
+    opacity: 0.82;
+  }
+
+  .home-selected-link:hover,
+  .home-selected-link:focus {
+    background: transparent;
+    opacity: 1;
+  }
+
+  .home-selected-works {
+    scroll-margin-top: 2rem;
+    padding-top: clamp(3rem, 7vw, 6rem);
+  }
+
+  .home-selected-works h2 {
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .home-hero {
+      min-height: auto;
+      padding-top: 1.25rem;
+    }
+
+    .home-logo {
+      position: relative;
+      top: auto;
+      left: auto;
+      width: min(100%, 24rem);
+      transform: none;
+    }
+
+    .home-text {
+      margin-left: 0;
+      padding-top: 0;
+    }
+
+    .home-text .home-description {
+      margin: 0;
+    }
+
+    .home-methods div {
+      padding-right: 0.45rem;
+    }
+
+    .home-methods div + div {
+      padding-left: 0.45rem;
+    }
+  }
+</style>
+
+
+
+<section class="home-selected-works" id="selected-works">
   <!-- <h1> // </h1> -->
-  <h2>Featured</h2>
+  <h2>Selected works</h2>
   
 
 
