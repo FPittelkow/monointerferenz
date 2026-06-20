@@ -8,7 +8,7 @@ tags:
   - glitch
   - procedural
 short_description: r3d
-image_preview: assets/images/thumbnails/r3d_thumbnail.jpg
+image_preview: thumbnails/r3d_thumbnail.jpg
 permalink: /r3d
 ---
 <!-- assets/images/r3d/remember-max.png -->

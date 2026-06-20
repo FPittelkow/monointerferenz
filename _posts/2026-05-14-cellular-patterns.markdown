@@ -9,7 +9,8 @@ title: Cellular Patterns
 permalink: /cellular-patterns
 ---
 
-![Cellular Patterns]{% picture default cellular_patterns/cellular_patterns.jpg --alt "Cellular Patterns" %}
+{% picture default CellularAutomaton/cellular_patterns.jpg --alt "Cellular Patterns" %}
+
 Cells and organisms form patterns in various ways. There can be repeating structures, but also internal processes that follow specific rhythms. Such as the transportation of nutrients or the movement of chloroplasts.
 The goal of this project is to present a way to explore these structures.
 

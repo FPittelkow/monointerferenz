@@ -4,7 +4,7 @@ categories: Computational Audiovisual
 # date: 2026-05-05 Europe/Brussel
 short_description: Atmosspheric sound mixing.
 featured: false
-image_preview: assets/images/thumbnails/remember-max.png
+image_preview: thumbnails/remember-max.png
 tags: sound
 title: Remembering Max
 permalink: /remembering-max
