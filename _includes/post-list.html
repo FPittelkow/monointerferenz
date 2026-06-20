@@ -23,14 +23,13 @@
     href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"
     {% if post.external_url %}target="_blank"{% endif %}
     title="{{ post.title }}">
+
     {% assign image_class = "t-hackcss-featured-image" %}
     {% if site.grid_image_grayscale %}
     {% assign image_class = image_class | append: " is-grayscale" %}
     {% endif %}
-    {% capture picture_tag %}
-    {% raw %}{% picture default {% endraw %}{{ post_image }}{% raw %} --alt "{% endraw %}{{ post.title | escape }}{% raw %}" --img class="{% endraw %}{{ image_class }}{% raw %}" loading="lazy" %}{% endraw %}
-    {% endcapture %}
-    {{ picture_tag | liquify }}
+
+    {% picture default "{{ post_image }}" --alt "{{ post.title }}" --img class="{{ image_class }}" loading="lazy" %}
   </a>
   {% endif %}
 

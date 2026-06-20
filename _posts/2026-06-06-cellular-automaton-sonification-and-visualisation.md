@@ -20,6 +20,8 @@ Often cellular automata are used to show the principles of the evolution of a po
 
 ## System Architecture
 
+
 {% picture default assets/images/CellularAutomaton/CellularAutomaton.png --alt "Cellular Automaton" %}
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wq72kLr-WJM?si=EYX5me0f6f8gF5kV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
