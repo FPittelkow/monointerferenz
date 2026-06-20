@@ -19,6 +19,6 @@ Combining sound and visuals creates an environment to understand such systems in
 Often cellular automata are used to show the principles of the evolution of a population over generations. Translating this long-lasting process into a different media allows a new way of understanding populations as a system of generations and the dependence of them.
 
 ## System Architecture
-{% picture default CellularAutomaton/CellularAutomaton.png --alt "Cellular Automaton" %}
+{% picture default assets/images/CellularAutomaton/CellularAutomaton.png --alt "Cellular Automaton" %}
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wq72kLr-WJM?si=EYX5me0f6f8gF5kV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

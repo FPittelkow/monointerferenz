@@ -12,4 +12,4 @@ image_preview: thumbnails/r3d_thumbnail.jpg
 permalink: /r3d
 ---
 <!-- assets/images/r3d/remember-max.png -->
-{% include image-gallery.html folder="r3d/" %}
+{% include image-gallery.html folder="assets/images/r3d/" %}
