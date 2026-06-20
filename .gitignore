@@ -18,3 +18,8 @@ Icon
 .Trashes
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
+
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
