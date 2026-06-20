@@ -23,10 +23,10 @@
            href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"
            {% if post.external_url %}target="_blank"{% endif %}
            title="{{ post.title }}">
-          <img class="t-hackcss-featured-image{% if site.grid_image_grayscale %} is-grayscale{% endif %}"
-               src="{{ post_image }}"
-               alt="{{ post.title }}"
-               loading="lazy" />
+          {% picture default {{ post_image }}
+            --alt {{ post.title }}
+            --img class="t-hackcss-featured-image{% if site.grid_image_grayscale %} is-grayscale{% endif %}"
+            loading="lazy" %}
         </a>
       {% endif %}
 
