@@ -20,14 +20,20 @@
     <div class="{% if is_grid %}t-hackcss-featured-card{% else %}media t-hackcss-media{% endif %}">
       {% if is_grid and post_image %}
         <a class="t-hackcss-featured-image-link"
-           href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"
-           {% if post.external_url %}target="_blank"{% endif %}
-           title="{{ post.title }}">
-          {% picture default {{ post_image }}
-            --alt {{ post.title }}
-            --img class="t-hackcss-featured-image{% if site.grid_image_grayscale %} is-grayscale{% endif %}"
-            loading="lazy" %}
-        </a>
+   href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"
+   {% if post.external_url %}target="_blank"{% endif %}
+   title="{{ post.title }}">
+
+  {% assign image_class = "t-hackcss-featured-image" %}
+  {% if site.grid_image_grayscale %}
+    {% assign image_class = image_class | append: " is-grayscale" %}
+  {% endif %}
+
+  {% picture default post_image
+    --alt post.title
+    --img class=image_class
+    loading="lazy" %}
+</a>
       {% endif %}
 
       <div class="media-body">

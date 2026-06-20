@@ -5,7 +5,7 @@ categories: Generative Computational
 short_description: Interactive generative sketch where ideas drift, connect, and dissolve into a moving network.
 featured: true
 tags: code experimantal
-image_preview: /assets/images/thumbnails/connected-ideas.png
+image_preview: assets/images/thumbnails/connected-ideas.png
 title: Connected Ideas
 permalink: /connected-ideas
 ---
