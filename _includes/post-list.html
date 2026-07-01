@@ -12,7 +12,7 @@
 
 {% if posts.size > 0 %}
 {% if is_grid %}
-<div class="t-hackcss-featured-grid">
+<div class="t-hackcss-featured-grid{% if include.class_name %} {{ include.class_name }}{% endif %}">
   {% endif %}
 
   {% for post in posts %}

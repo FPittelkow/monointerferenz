@@ -197,6 +197,10 @@ $on-palm: 768px;
     object-fit: cover;
   }
 
+  &-music-grid &-featured-image {
+    aspect-ratio: 1 / 1;
+  }
+
   &-featured-image.is-grayscale {
     filter: grayscale(1);
     transition: filter 0.2s ease;
