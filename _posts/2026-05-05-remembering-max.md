@@ -1,8 +1,9 @@
 ---
 layout: post
 categories: Computational Audiovisual
-# date: 2026-05-05 Europe/Brussel
+date: 2026-05-05 Europe/Brussel
 short_description: Atmosspheric sound mixing.
+archive_record: MI-2021-RM
 featured: false
 image_preview: assets/images/thumbnails/remember-max.png
 tags: sound

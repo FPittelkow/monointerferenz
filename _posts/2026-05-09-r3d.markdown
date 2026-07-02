@@ -3,6 +3,7 @@ title: r3d
 layout: post
 featured: true
 categories: Visual
+archive_record: MI-2026-R3
 tags:
   - experimental
   - glitch

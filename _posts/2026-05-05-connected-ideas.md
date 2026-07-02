@@ -1,8 +1,9 @@
 ---
 layout: post
 categories: Generative Computational
-# date: 2026-05-05 Europe/Brussel
+date: 2026-05-05 Europe/Brussel
 short_description: Interactive generative sketch where ideas drift, connect, and dissolve into a moving network.
+archive_record: MI-2025-CI
 featured: true
 tags: code experimantal
 image_preview: assets/images/thumbnails/connected-ideas.png

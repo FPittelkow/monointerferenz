@@ -1,7 +1,8 @@
 ---
 layout: post
 categories: music
-# date: 2026-05-05 Europe/Brussel
+date: 2026-05-05 Europe/Brussel
+archive_record: MIS-2026-GP
 short_description:
 tags:
 image_preview: assets/images/music/GroundPulseCover.png

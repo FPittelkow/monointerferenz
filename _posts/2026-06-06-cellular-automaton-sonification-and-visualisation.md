@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: Audiovisual
-# date: 2026-05-05 Europe/Brussel
+date: 2026-05-05 Europe/Brussel
 short_description: Sonification and visualisation of a Cellular Automaton | MI-2026-CAS
 archive_record: MI-2026-CAS
 tags: sound visual generative code
@@ -19,6 +19,8 @@ Combining sound and visuals creates an environment to understand such systems in
 Often cellular automata are used to show the principles of the evolution of a population over generations. Translating this long-lasting process into a different media allows a new way of understanding populations as a system of generations and the dependence of them.
 
 ## System Architecture
+
+![]()
 
 {% picture default assets/images/CellularAutomaton/CellularAutomaton.png alt="Cellular Automaton" %}
 
