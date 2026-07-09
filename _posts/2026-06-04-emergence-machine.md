@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Emergence Machine
+archive_record: MI-2026-EM
 categories: Computational
 tags: code electronic environment
 # date: 2026-05-05 Europe/Brussel
