@@ -25,3 +25,7 @@ Often cellular automata are used to show the principles of the evolution of a po
 {% picture default assets/images/CellularAutomaton/CellularAutomaton.png alt="Cellular Automaton" %}
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wq72kLr-WJM?si=EYX5me0f6f8gF5kV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Documents
+
+- [Artworksheet and Documentation](https://www.dropbox.com/scl/fo/5vn8k1oa3mmq3lxl1jp8r/AE72GQ6_qNYgyE7BltOyRTk?rlkey=ntb72y8f0vuvy8v0pxz73fx5k&dl=0)
