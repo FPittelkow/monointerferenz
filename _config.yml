@@ -26,7 +26,7 @@ theme_mode: standard  # choices are: 'dark', 'standard', 'markdown'
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-minify-html-rs
+  # - jekyll-minify-html-rs
 
 
 # Customizations
@@ -62,7 +62,7 @@ navigation:
     url: /music
 
   # - label: Explore
-  
+
   # - text: Tags
   #   url: /tags
   #   secondary: true
