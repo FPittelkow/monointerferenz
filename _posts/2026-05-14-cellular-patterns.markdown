@@ -22,4 +22,4 @@ If the pattern generated contains one or more of these, a specific sound for get
 
 The sample under the microscope can be moved to view different parts and therefore generate new patterns. Not every pattern contains one of the preset rules. In that case, no sound gets triggered, and a new pattern has to be found.
 
-<iframe width="640" height="600" src="https://www.youtube.com/embed/Nb5CVFCqHjo" title="cp demo n" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="640" height="600" src="https://www.youtube.com/embed/Nb5CVFCqHjo" title="Cellular Patterns Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
