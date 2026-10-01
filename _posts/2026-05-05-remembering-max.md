@@ -16,4 +16,4 @@ The main goal of the interactive installation is to create an atmosphere consist
 
 The viewer has the opportunity to shape the atmosphere using a smartphone or tablet. It should be possible to cross-fade between different states of the installation.These atmospheres shall represent different environments. E.g. a city or a forest. The viewer could now mix the city with the forest and experience these combinations.
 
-<iframe width="640" height="600" src="https://www.youtube.com/embed/aPO69jznL0s" title="ExAuVi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[-> Watch the video on Youtube](https://www.youtube.com/watch?v=aPO69jznL0s)
