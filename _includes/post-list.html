@@ -21,7 +21,7 @@
     {% if is_grid and post_image %}
     <a class="t-hackcss-featured-image-link"
     href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"
-    {% if post.external_url %}target="_blank"{% endif %}
+    {% if post.external_url %}target="_blank" rel="noopener noreferrer"{% endif %}
     title="{{ post.title }}">
 
     {% assign image_class = "t-hackcss-featured-image" %}
@@ -37,7 +37,7 @@
     <div class="media-heading">
       <span>
         {% if post.external_url %}
-        <a href="{{ post.external_url }}" target="_blank" title="{{ post.title }}">
+        <a href="{{ post.external_url }}" target="_blank" rel="noopener noreferrer" title="{{ post.title }}">
           {{ post.title }}
         </a>
         {% else %}
