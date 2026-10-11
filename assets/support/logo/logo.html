@@ -1,14 +1,17 @@
+---
+---
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/p5@2.3.3/lib/p5.min.js"></script>
-  <script src="logo.js?v=3" defer></script>
-</head>
-<body>
+<html lang="en">
+  <head>
+    {% include sketch-boot.html %}
+    <link
+      rel="stylesheet"
+      href="{{ "/assets/support/logo/styles.css" | relative_url }}?v={{ "assets/support/logo/styles.css" | asset_hash }}">
+    <script
+      src="{{ "/assets/support/logo/logo.js" | relative_url }}?v={{ "assets/support/logo/logo.js" | asset_hash }}"
+      defer></script>
+  </head>
+  <body>
     <main id="stage" aria-label="monointerferenz animated logo"></main>
-</body>
+  </body>
 </html>

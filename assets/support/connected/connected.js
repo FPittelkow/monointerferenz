@@ -2,7 +2,7 @@ var nodes = [];
 
 function setup() {
   // Save the canvas element so we can modify its properties.
-  let canvas = createCanvas(canvasWidth(), canvasHeight());
+  let canvas = SketchRuntime.createCanvas();
   canvas.parent(document.querySelector('main'));
   smooth();
   
@@ -21,18 +21,8 @@ function setup() {
 }
 
 function windowResized() {
-  resizeCanvas(canvasWidth(), canvasHeight());
+  SketchRuntime.resize();
   background(0);
-}
-
-function canvasWidth() {
-  var main = document.querySelector('main');
-  return main ? main.clientWidth : windowWidth;
-}
-
-function canvasHeight() {
-  var main = document.querySelector('main');
-  return main ? main.clientHeight : windowHeight;
 }
 
 function draw() {

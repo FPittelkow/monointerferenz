@@ -36,7 +36,11 @@
     {%- endcomment -%}
     {% assign use_lightbox = page.lightbox %}
     {% if use_lightbox == nil %}
-      {% assign use_lightbox = page.layout == 'post' %}
+      {% if page.layout == 'post' %}
+        {% assign use_lightbox = true %}
+      {% else %}
+        {% assign use_lightbox = false %}
+      {% endif %}
     {% endif %}
     {% if use_lightbox %}
       <link rel="stylesheet" href="{{ "/css/lightbox.css" | relative_url }}?v={{ "css/lightbox.css" | asset_hash }}">

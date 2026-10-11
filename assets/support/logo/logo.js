@@ -13,21 +13,35 @@ window.monointerferenzSketch = {
 };
 
 const palettes = [
+  // light (default)
   {
     paper: [255, 255, 255],
     ink: [28, 25, 22],
     light: [212, 211, 205],
     mid: [104, 102, 96],
   },
+  // dark — used when the embedding page switches the sketch to dark
+  {
+    paper: [18, 17, 16],
+    ink: [226, 222, 214],
+    light: [58, 56, 52],
+    mid: [128, 125, 118],
+  },
 ];
 
+function setPalette(theme) {
+  paletteIndex = theme === "dark" ? 1 : 0;
+}
+
 function setup() {
-  const cnv = createCanvas(windowWidth, windowHeight);
+  const cnv = SketchRuntime.createCanvas();
   cnv.parent("stage");
   pixelDensity(1);
   noFill();
   strokeCap(SQUARE);
   strokeJoin(MITER);
+  stillMode = SketchRuntime.reducedMotion;
+  SketchRuntime.onTheme(setPalette);
   loadLogo();
 }
 
@@ -268,8 +282,9 @@ function getCenter(points) {
 }
 
 function drawStatus(message) {
+  const palette = palettes[paletteIndex];
   push();
-  fill(23, 21, 18, 130);
+  fill(...palette.ink, 130);
   noStroke();
   textAlign(CENTER, CENTER);
   textSize(13);
@@ -290,5 +305,5 @@ function colorFromTone(tone, palette) {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  SketchRuntime.resize();
 }

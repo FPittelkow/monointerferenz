@@ -1,0 +1,38 @@
+{%- comment -%}
+  Sketch boot — shared <head> setup for p5.js sketches embedded in <iframe>s.
+
+  Include this inside a Jekyll-processed sketch page's <head>, then add the
+  sketch's own CSS and JS with cache-busting, e.g.:
+
+      {% include sketch-boot.html %}
+      <link rel="stylesheet" href="{{ "/assets/support/<name>/styles.css" | relative_url }}?v={{ "assets/support/<name>/styles.css" | asset_hash }}">
+      <script      src="{{ "/assets/support/<name>/<name>.js"  | relative_url }}?v={{ "assets/support/<name>/<name>.js"  | asset_hash }}" defer></script>
+
+  The page then provides its own <body> container (or <main id="stage">).
+  See js/sketch-runtime.js for the API sketches use to size and resize their
+  canvas, follow the parent's color theme and respect reduced motion.
+{%- endcomment -%}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- p5.js — pinned to the version the sketches are tested against -->
+<script
+  src="https://cdn.jsdelivr.net/npm/p5@2.3.3/lib/p5.min.js"
+  integrity="sha384-SomRAPLG739U4EgE9jikBcMmCGPR2HQ/7rMNU5hTKbngPGnPT38K28CUR5P0oVdI"
+  crossorigin="anonymous"
+  defer></script>
+
+<!-- Shared sketch runtime (canvas sizing, resize, theme, reduced motion) -->
+<script src="{{ "/js/sketch-runtime.js" | relative_url }}?v={{ "js/sketch-runtime.js" | asset_hash }}" defer></script>
+
+<style>
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  canvas {
+    display: block;
+  }
+</style>

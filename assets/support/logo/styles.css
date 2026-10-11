@@ -5,6 +5,13 @@
   --muted: rgba(23, 21, 18, 0.5);
 }
 
+[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #121110;
+  --ink: #e2ded6;
+  --muted: rgba(226, 222, 214, 0.5);
+}
+
 * {
   box-sizing: border-box;
 }
