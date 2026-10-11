@@ -21,7 +21,13 @@ sitemap: false
   <div id="search-results"></div>
 </section>
 
+{%- capture search_index_source -%}
+{%- for post in site.posts -%}
+{{ post.url }}{{ post.date }}{{ post.title }}{{ post.short_description }}{{ post.tags | join: "," }}{{ post.categories | join: "," }}{{ post.content }}
+{%- endfor -%}
+{%- endcapture -%}
+{% assign search_index_hash = search_index_source | content_hash %}
 <script>
-  window.searchDataUrl = {{ "/search.json" | prepend: site.baseurl | jsonify }};
+  window.searchDataUrl = {{ "/search.json" | relative_url | append: "?v=" | append: search_index_hash | jsonify }};
 </script>
-<script src="{{ "/js/search.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/search.js" | relative_url }}?v={{ "js/search.js" | asset_hash }}"></script>

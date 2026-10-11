@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /impressum.html
 
-Sitemap: https://monointerferenz.de
+Sitemap: https://monointerferenz.de/sitemap.xml

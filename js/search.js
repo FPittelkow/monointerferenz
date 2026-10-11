@@ -7,34 +7,58 @@
     return;
   }
 
-  function postLink(post) {
-    return '<a href="' + post.url + '" title="' + post.title + '">' + post.title + '</a>';
+  var DEBOUNCE_MS = 150;
+  var debounceTimer = null;
+  var posts = [];
+
+  function escapeHtml(value) {
+    return String(value == null ? '' : value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
   }
 
-  function render(posts, query) {
+  function postLink(post) {
+    var title = escapeHtml(post.title);
+    return '<a href="' + escapeHtml(post.url) + '" title="' + title + '">' + title + '</a>';
+  }
+
+  function buildSearchText(post) {
+    return [
+      post.title,
+      post.description,
+      post.content,
+      (post.categories || []).join(' '),
+      (post.tags || []).join(' ')
+    ].join(' ').toLowerCase();
+  }
+
+  function render(list, query) {
     if (!query) {
       results.innerHTML = '';
       count.textContent = 'Type to search all posts.';
       return;
     }
 
-    count.textContent = posts.length + (posts.length === 1 ? ' result' : ' results');
+    count.textContent = list.length + (list.length === 1 ? ' result' : ' results');
 
-    if (!posts.length) {
+    if (!list.length) {
       results.innerHTML = '<p>No posts found.</p>';
       return;
     }
 
-    results.innerHTML = posts.map(function (post) {
-      var tags = post.tags.concat(post.categories).map(function (tag) {
-        return '<span class="t-hackcss-post-tag">' + tag + '</span>';
+    results.innerHTML = list.map(function (post) {
+      var tags = (post.tags || []).concat(post.categories || []).map(function (tag) {
+        return '<span class="t-hackcss-post-tag">' + escapeHtml(tag) + '</span>';
       }).join(' ');
 
       return [
         '<div class="media t-hackcss-media">',
           '<div class="media-body">',
-            '<div class="media-heading"><span>' + post.date + ' &raquo; ' + postLink(post) + '</span></div>',
-            '<div class="media-content">' + post.description + '</div>',
+            '<div class="media-heading"><span>' + escapeHtml(post.date) + ' &raquo; ' + postLink(post) + '</span></div>',
+            '<div class="media-content">' + escapeHtml(post.description) + '</div>',
             '<div class="t-hackcss-post-tags">' + tags + '</div>',
           '</div>',
         '</div>'
@@ -43,29 +67,39 @@
   }
 
   function matches(post, query) {
-    var haystack = [
-      post.title,
-      post.description,
-      post.content,
-      post.categories.join(' '),
-      post.tags.join(' ')
-    ].join(' ').toLowerCase();
+    return post.searchText.indexOf(query) !== -1;
+  }
 
-    return haystack.indexOf(query) !== -1;
+  function runSearch() {
+    var query = input.value.trim().toLowerCase();
+
+    if (!query) {
+      render([], '');
+      return;
+    }
+
+    render(posts.filter(function (post) {
+      return matches(post, query);
+    }), query);
   }
 
   fetch(window.searchDataUrl || '/search.json')
     .then(function (response) {
       return response.json();
     })
-    .then(function (posts) {
+    .then(function (data) {
+      posts = data.map(function (post) {
+        post.searchText = buildSearchText(post);
+        return post;
+      });
+
       render([], '');
 
       input.addEventListener('input', function () {
-        var query = input.value.trim().toLowerCase();
-        render(posts.filter(function (post) {
-          return matches(post, query);
-        }), query);
+        if (debounceTimer) {
+          clearTimeout(debounceTimer);
+        }
+        debounceTimer = setTimeout(runSearch, DEBOUNCE_MS);
       });
     })
     .catch(function () {

@@ -30,8 +30,18 @@
     <!-- Prism.js -->
     <!-- <script src="/js/prism.js"></script> -->
 
-    <script type="text/javascript" src="/js/lightbox.js"></script>
-    <link rel="stylesheet" href="/css/lightbox.css">
+    {%- comment -%}
+      Only load the lightbox on pages that contain media links (posts by
+      default). Override per page with `lightbox: true` / `lightbox: false`.
+    {%- endcomment -%}
+    {% assign use_lightbox = page.lightbox %}
+    {% if use_lightbox == nil %}
+      {% assign use_lightbox = page.layout == 'post' %}
+    {% endif %}
+    {% if use_lightbox %}
+      <link rel="stylesheet" href="{{ "/css/lightbox.css" | relative_url }}?v={{ "css/lightbox.css" | asset_hash }}">
+      <script defer type="text/javascript" src="{{ "/js/lightbox.js" | relative_url }}?v={{ "js/lightbox.js" | asset_hash }}"></script>
+    {% endif %}
   </body>
 
 </html>

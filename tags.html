@@ -8,12 +8,6 @@ sitemap: false
 <section>
   <h2>Tags</h2>
 
-  <div class="t-hackcss-tag-graph" data-tag-graph>
-    <svg class="t-hackcss-tag-graph-svg" role="img" aria-labelledby="tag-graph-title"></svg>
-  </div>
-
-  <aside class="t-hackcss-tag-insight" data-tag-insight></aside>
-
   <div class="t-hackcss-tag-list">
     {% assign sorted_tags = site.tags | sort %}
     {% if sorted_tags.size > 0 %}
