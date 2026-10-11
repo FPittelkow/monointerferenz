@@ -77,7 +77,6 @@ navigation:
   - text: Contact
     url: mailto:operator@monointerferenz.de
 
-navigation_category_exclusions: [download]
-navigation_category_exclusions: [music]
+navigation_category_exclusions: [download, music]
 navigation_category_titles:
   artifact: Artifacts
