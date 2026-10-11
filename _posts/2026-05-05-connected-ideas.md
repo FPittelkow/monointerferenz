@@ -13,6 +13,7 @@ permalink: /connected-ideas
 
 **Drag left to decrease or right to increase the number of Ideas.**
 <iframe
+  loading="lazy"
   scrolling="no"
   style="overflow:hidden"
   width="100%"
