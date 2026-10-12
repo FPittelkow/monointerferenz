@@ -10,5 +10,4 @@ group :jekyll_plugins do
   gem "jekyll_picture_tag"
   gem "jekyll-minify-html-rs", "~> 1.0.0"
   gem 'jekyll-sitemap'
-  gem 'github-pages'
 end
