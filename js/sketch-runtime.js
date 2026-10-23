@@ -116,8 +116,8 @@ window.SketchRuntime = (function () {
     if (fromQuery) return sanitize(fromQuery);
     // The site is light-only for now; the iframes follow the parent site.
     // Switch to `themeFromSystem()` below once a site-wide dark mode exists.
-    //return 'light';
-    return themeFromSystem();
+    return 'light';
+    //return themeFromSystem();
   }
 
   function setTheme(next) {
